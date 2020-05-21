@@ -27,11 +27,4 @@ steps:
 #    goals: 'package'
 
 
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
-      echo $VAR
-      echo $VAR2
-      echo $[ variablegroups.blocer_var.variable1 ]
-      echo $[ variablegroups.blocer_var.variable2 ]
+- script: echo $[ variable2 ]

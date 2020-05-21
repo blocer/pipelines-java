@@ -15,4 +15,4 @@ variables:
 - group: blocer_var
 
 steps:
-- script: echo $(variable2)
+- script: echo $(variable1)

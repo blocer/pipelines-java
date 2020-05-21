@@ -10,6 +10,10 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+
+variables:
+- group: blocer_var
+
 steps:
 #- task: Maven@3
 #  inputs:
@@ -22,8 +26,7 @@ steps:
 #    testResultsFiles: '**/surefire-reports/TEST-*.xml'
 #    goals: 'package'
 
-variables:
-- group: blocer_var
+
 - task: Bash@3
   inputs:
     targetType: 'inline'

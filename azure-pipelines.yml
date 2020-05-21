@@ -27,4 +27,4 @@ steps:
 #    goals: 'package'
 
 
-- script: echo $[ variable2 ]
+- script: echo $variable2

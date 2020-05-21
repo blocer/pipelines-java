@@ -33,5 +33,5 @@ steps:
     script: |
       echo $VAR
       echo $VAR2
-      echo $variable1
-      echo $variable2
+      echo $[variables.variable1]
+      echo $[variables.variable1]

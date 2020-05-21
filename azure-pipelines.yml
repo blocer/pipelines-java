@@ -33,5 +33,5 @@ steps:
     script: |
       echo $VAR
       echo $VAR2
-      echo $[variables.variable1]
-      echo $[variables.variable1]
+      echo $[ variablegroups.blocer_var.variable1 ]
+      echo $[ variablegroups.blocer_var.variable2 ]

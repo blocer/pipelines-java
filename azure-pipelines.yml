@@ -23,6 +23,8 @@ variables:
 
 steps:
 - script: echo $(variable1)
+- checkout: self
+  path: java
 - checkout: nodejs
   path: nodejs
 

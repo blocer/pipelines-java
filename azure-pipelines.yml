@@ -4,6 +4,17 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
 
+resources:
+  repositories:
+  - repository: blocer
+    type: github
+    endpoint: github.com_blocer
+    name: blocer/nodejs
+  - repository: blocer
+    type: github
+    endpoint: github.com_blocer
+    name: blocer/pipelines-java
+
 trigger:
 - master
 
@@ -16,12 +27,5 @@ variables:
 
 steps:
 - script: echo $(variable1)
-
-- task: DownloadGitHubRelease@0
-  inputs:
-    connection: 'github.com_blocer'
-    userRepository: 'blocer/pipelines-java'
-    defaultVersionType: 'latest'
-    downloadPath: '$(System.ArtifactsDirectory)'
 
 - script: ls $(System.ArtifactsDirectory)

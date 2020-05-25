@@ -16,3 +16,10 @@ variables:
 
 steps:
 - script: echo $(variable1)
+
+- task: DownloadGitHubRelease@0
+  inputs:
+    connection: 'github.com_blocer'
+    userRepository: 'blocer/pipelines-java'
+    defaultVersionType: 'latest'
+    downloadPath: '$(System.ArtifactsDirectory)'

@@ -25,4 +25,4 @@ steps:
 - script: echo $(variable1)
 - checkout: nodejs
 
-- script: ls /home/vsts/work/1/
+- script: ls -R /home/vsts/work/1/

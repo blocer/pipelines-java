@@ -24,4 +24,4 @@ variables:
 steps:
 - script: echo $(variable1)
 
-- script: ls $(System.ArtifactsDirectory)
+- script: ls /home/vsts/work/1/s

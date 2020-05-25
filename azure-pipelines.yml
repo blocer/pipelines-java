@@ -24,5 +24,6 @@ variables:
 steps:
 - script: echo $(variable1)
 - checkout: nodejs
+  path: nodejs
 
 - script: ls -R /home/vsts/work/1/

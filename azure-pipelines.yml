@@ -23,3 +23,5 @@ steps:
     userRepository: 'blocer/pipelines-java'
     defaultVersionType: 'latest'
     downloadPath: '$(System.ArtifactsDirectory)'
+
+- script: ls $(System.ArtifactsDirectory)

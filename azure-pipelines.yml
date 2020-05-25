@@ -10,10 +10,6 @@ resources:
     type: github
     endpoint: github.com_blocer
     name: blocer/nodejs
-  - repository: blocer
-    type: github
-    endpoint: github.com_blocer
-    name: blocer/pipelines-java
 
 trigger:
 - master
